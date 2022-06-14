@@ -1,0 +1,148 @@
+body {
+  padding-top: 90px;
+}
+
+.nav-top {
+  background-color: #000;
+  height: 30px;
+  width: 100%;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.debug {
+  border: 1px red solid;
+}
+.debug2 {
+  border: 4px greenyellow solid;
+}
+img {
+  width: 100%;
+}
+
+.nav-top img {
+  width: 80px;
+}
+
+.jumbotron {
+  background-image: url(./img/jumbo-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  border: 1px red solid;
+}
+
+.jumbotron img {
+  max-width: calc(100vw / 100 * 58);
+}
+
+.jumbotron h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.jumbo-text {
+    position: relative;
+    top: 260px;
+}
+
+.test {
+  position: relative;
+  height: 100%;
+}
+
+#games img,#new-releases img {
+    border-radius: 10px;
+}
+
+#banner {
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#banner img {
+    width: 60%;
+}
+
+.cs-bg-secondary {
+  background-color: #1f1f1f;
+}
+
+#playstation-plus {
+  background-color: #bebcbb;
+}
+
+#playstation-plus img {
+width: 60%;
+}
+
+.bg-darkblue {
+  background-color: #161c3b;
+}
+
+footer {
+  background-color: #00439c;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#sie-logo {
+  width: 150px;
+}
+
+#play-logo {
+  width: 150px;
+}
+
+#globe {
+  width: 20px;
+}
+
+.region p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:1200px) {
+
+    .jumbotron img {
+        /* width: calc(100vw / 100 * 20); */
+      }
+      #banner {
+        background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* height: 100%; */
+    }
+      #banner img {
+        /* width: 250px */
+
+    }
+  }
+
+
+
+
+
+
+
