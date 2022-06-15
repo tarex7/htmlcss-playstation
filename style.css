@@ -2,6 +2,15 @@ body {
   padding-top: 90px;
 }
 
+.debug {
+  border: 2px red solid;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAVBAR */
 .nav-top {
   background-color: #000;
   height: 30px;
@@ -10,83 +19,116 @@ body {
 
 .navbar {
   padding: 0;
+  box-shadow: rgba(128, 128, 128, 0.1) 1px 1px 5px;
 }
 
-.debug {
-  border: 1px red solid;
+.navbar .nav-link {
+  color: #666;
+  margin: 0 5px;
 }
-.debug2 {
-  border: 4px greenyellow solid;
-}
-img {
-  width: 100%;
+.navbar .nav-link:hover {
+  color: #000;
 }
 
+/* Logo sony */
 .nav-top img {
   width: 80px;
 }
 
+/* Hamburger icon */
+
+.fa-bars {
+  opacity: 0.6;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.active {
+  outline: 2px solid #0072ce;
+  outline-offset: 3px;
+}
+
+/* Text small */
+.fz-small {
+  font-size: 0.9rem;
+  color: #0072ce;
+}
+
 .jumbotron {
   background-image: url(./img/jumbo-bg.png);
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 600px;
-  border: 1px red solid;
 }
 
-.jumbotron img {
-  max-width: calc(100vw / 100 * 58);
+#returnal-logo {
+  width: 60%;
 }
 
-.jumbotron h1 {
-    font-size: 2.6rem;
+
+h1 {
+  font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+  font-size: 2rem;
 }
 
-.jumbo-text {
-    position: relative;
-    top: 260px;
+p {
+  font-size: 1.2rem;
 }
 
-.test {
-  position: relative;
-  height: 100%;
+li {
+  list-style-type: none;
 }
 
-#games img,#new-releases img {
-    border-radius: 10px;
+a {
+  text-decoration: none;
+}
+
+#games img,
+#new-releases img {
+  border-radius: 15px;
 }
 
 #banner {
-    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+  background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 #banner img {
-    width: 60%;
+  width: 60%;
 }
 
 .cs-bg-secondary {
   background-color: #1f1f1f;
 }
 
+.bg-darkblue {
+  background-color: #161c3b;
+}
+
 #playstation-plus {
   background-color: #bebcbb;
 }
 
-#playstation-plus img {
-width: 60%;
+#playstation-plus-logo {
+  width: 60%;
+  object-fit: fill;
 }
 
-.bg-darkblue {
-  background-color: #161c3b;
+#playstation-plus-banner {
+  height: 100%;
+}
+
+#playstation-now-logo {
+  width: 60%;
 }
 
 footer {
@@ -98,47 +140,131 @@ footer a {
   color: #fff;
 }
 
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
+footer p {
+  font-size: 0.9rem;
 }
 
 #sie-logo {
-  width: 150px;
+  width: 140px;
 }
 
 #play-logo {
-  width: 150px;
+  width: 120px;
+}
+
+#play-logo-footer {
+  width: 100px;
 }
 
 #globe {
   width: 20px;
 }
 
+
+
 .region p {
   margin-bottom: 0;
 }
 
-@media screen and (min-width:1200px) {
 
-    .jumbotron img {
-        /* width: calc(100vw / 100 * 20); */
-      }
-      #banner {
-        background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* height: 100%; */
-    }
-      #banner img {
-        /* width: 250px */
 
-    }
-  }
+/* Dropdowns */
+.dropdown-menu.menu-hid {
+  width: 100vw;
+  top: 50px;
+  left: -15%;
+  border-radius: 0;
+  position: fixed;
+  border: none;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  z-index: 0;
+}
+
+#play-menu-ico {
+  width: 70px;
+}
+
+.dropdown-item {
+  border: 2px transparent solid;
+}
+
+.dropdown-item.top:hover {
+  background-color: transparent;
+  border: 2px #0072ce solid;
+  border-radius: 5px;
+}
+
+.dropdown-item.down:hover {
+  color: #00439c;
+  background-color: transparent;
+}
+
+.dropdown-menu a {
+  font-size: 0.8rem;
+}
+
+.dropdown-menu span {
+  font-size: 0.8rem;
+}
+
+/* Buttons */
+
+.btn:hover {
+  outline: 2px #000 solid;
+  outline-offset: -4px;
+}
+
+.btn-dark:hover,
+.btn-primary:hover {
+  outline: 2px rgb(255, 255, 255) solid;
+  outline-offset: -4px;
+}
+
+.btn-danger {
+  background-color: #cd3d0f;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #cd3d0f;
+  color: #fff;
+}
+
+#lens {
+  width: 25px;
+  margin-left: 20px;
+}
+
+#games .row > div {
+  transition: transform 0.3s ease-in-out;
+}
+
+#games .row > div:hover {
+  transform: translateY(-20px);
+}
+
+#accessories .row > div figure {
+  filter: opacity(0.7);
+  border-bottom: 2px transparent solid;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+#accessories .row > div:hover figure {
+  filter: opacity(1);
+  border-bottom: 2px #0072ce solid;
+}
+
+#accessories p {
+  font-size: 0.9rem;
+}
+
+#accessories figure {
+  border-bottom: 2px transparent solid;
+}
 
 
 
